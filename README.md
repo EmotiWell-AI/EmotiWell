@@ -23,3 +23,9 @@ EmotiWell is an AI-powered mental health companion app specifically designed to 
 * Firebase
 * OpenAI
 * Hume
+
+### Project Planning Docs:
+
+[Figma Design](https://www.figma.com/file/O3v8DXU5WQHBCuv0Rn2N4U/EmotiWell-Mvp?type=design&node-id=2509%3A804&t=8q7wy4Kpl4FiyhKU-1)
+
+[Mural Board](https://app.mural.co/t/hackathonucber5937/m/hackathonucber5937/1687024422834/71a4b12dc8274a0ffe9d03c7fe5984f682d138a4?sender=u3d0acc58dc2fa69f98194775)
