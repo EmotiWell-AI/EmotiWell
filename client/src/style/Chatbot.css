@@ -14,7 +14,7 @@
   
   /* Chat Window */
   .chatbot-window {
-    height: calc(100% - 100px);
+    height: calc(100% - 140px);
     padding: 20px;
     overflow-y: scroll;
     background-color: #f4f4f4;
@@ -40,7 +40,6 @@
   .message-input {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
     background-color: #fff;
   }
@@ -86,6 +85,33 @@
     background: #ccc;
   }
   
+  /* Header/Navbar */
+  .chatbot-header {
+    background-color: #4d4dff;
+    padding: 10px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+  }
+  
   /* Media Queries */
   @media (max-width: 480px) {
     .chatbot-container {
@@ -95,10 +121,8 @@
     }
   
     .chatbot-window {
-      height: calc(100% - 56px);
+      height: calc(100% - 80px);
       padding: 10px;
     }
   }
-  
-
   
