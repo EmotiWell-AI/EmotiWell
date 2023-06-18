@@ -1,36 +1,24 @@
+require('dotenv').config();
 const express = require('express');
-
-const Pool = require('pg').Pool;
-const app = express();
 const cors = require('cors');
-const PORT = 3000
+const chatRoutes = require('./routes/chatRoutes');
 
-const pool = new Pool({
-  user: "room_status_db_user",
-  password: "E859GVjs389UEy5pSgUqh7Gg0n33RjKQ",
-  host: "dpg-ce8n5a6n6mposnkvtqh0-a",
-  port: 5432,
-  database: "room_status_db"
-});
+
+const app = express();
+
+const PORT = 3000;
 
 app.use(cors())
 app.use(express.json());
 
-app.get("/", async(req, res) => {
-  res.json("hello")
-})
+app.use("/chat", chatRoutes);
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
 
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-
-
-
-
-
-
-
-
-
