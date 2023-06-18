@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './style/Chatbot.css';
+// import './style/header.css';
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
@@ -20,7 +21,7 @@ const Chatbot = () => {
 
     try {
       // Call your OpenAI API or any other chatbot service to handle the user's message
-      const openAIResponse = await axios.post('YOUR_OPENAI_API_ENDPOINT', {
+      const openAIResponse = await axios.post('http://localhost:3000/chat/sendMessage', {
         message: userInput,
       });
 
@@ -48,6 +49,14 @@ const Chatbot = () => {
 
   return (
     <div className="chatbot-container">
+         <header className="chatbot-header">
+            <nav className='navbar'>
+                <div className="logo">EmotiWell</div>
+                    <ul className="nav-links">
+                        <li><a href="/">Home</a></li>
+                    </ul>
+            </nav>
+        </header>
       <div className="chatbot-window">
         {messages.map((message, index) => (
           <div
@@ -69,6 +78,8 @@ const Chatbot = () => {
         <button type="submit">Send</button>
       </form>
     </div>
+   
+    
   );
 };
 
