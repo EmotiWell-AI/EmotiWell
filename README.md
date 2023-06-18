@@ -8,18 +8,18 @@ EmotiWell is an AI-powered mental health companion app specifically designed to 
 
 ## Problems being solved
 
- Lack of Mental Health Support
- Limited Accessibility to Mental Health Services
- Difficulty in Identifying and Expressing Emotions
- Lack of Personalized Mental Health Resources
- Insufficient Self-Care and Coping Strategies
+ * Lack of Mental Health Support
+ * Limited Accessibility to Mental Health Services
+ * Difficulty in Identifying and Expressing Emotions
+ * Lack of Personalized Mental Health Resources
+ * Insufficient Self-Care and Coping Strategies
 
 ## Tech stack
 
-React
-Node.js 
-Express
-PostgreSQL
-Firebase
-OpenAI
-Hume
+* React
+* Node.js 
+* Express
+* PostgreSQL
+* Firebase
+* OpenAI
+* Hume
