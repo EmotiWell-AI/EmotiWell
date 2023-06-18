@@ -4,7 +4,8 @@
   "description": "backend for emotiwell",
   "main": "index.js",
   "scripts": {
-    "test": "emotiwell test"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,12 @@
   },
   "homepage": "https://github.com/EmotiWell-AI/EmotiWell#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "firebase-admin": "^11.9.0",
+    "openai": "^3.3.0",
+    "pg": "^8.11.0",
     "pg-promise": "^11.5.0"
   }
 }
